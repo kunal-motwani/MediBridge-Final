@@ -1,0 +1,47 @@
+{
+ "id": "fefc05411a49e65a283ef7cd",
+ "created": "2026-10-20T20:41:31+00:00",
+ "consult_id": "upload",
+ "consent": false,
+ "consent_at": null,
+ "audio_file": null,
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 54,
+   "sex": "male",
+   "mrn": "MB-2026-487139"
+  },
+  "active_medications": [
+   {
+    "name": "Metformin",
+    "dose": "500 mg",
+    "unit": "",
+    "frequency": "Twice daily after meals"
+   },
+   {
+    "name": "Amlodipine",
+    "dose": "5 mg",
+    "unit": "",
+    "frequency": "Once daily morning"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "reported allergy"
+   },
+   {
+    "substance": "Sulfa drugs",
+    "reaction": "reported allergy"
+   }
+  ],
+  "problem_list": [
+   "Type 2 Diabetes Mellitus",
+   "Essential Hypertension"
+  ],
+  "prior_note_excerpt": "2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-09-15 (Comprehensive Metabolic Panel & Lipid Profile): HbA1c: 7.1% (improved from 8.2%). Total Cholesterol: 185 mg/dL, LDL: 110 mg/dL, Triglycerides: 155 mg/dL. Renal profile within normal limits.\n2026-08-10 (Echocardiogram & Cardiac Assessment): Left ventricular ejection fraction 60%. Mild concentric left ventricular hypertrophy. No regional wall motion abnormalities.",
+  "recordsCount": 4
+ }
+}

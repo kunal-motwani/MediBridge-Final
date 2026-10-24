@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" agent="MediBridge Platform Generator" version="21.0.0" type="device">
+  <diagram id="medibridge-straight-flowchart" name="MediBridge Complete System &amp; Scribe Flowchart">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1700" background="#f8fafc" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="MediBridge Platform: End-to-End System &amp; Clinical Flowchart" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="400" y="30" width="800" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="start" value="User Accesses MediBridge Platform&#10;(http://localhost:5173)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#64748b;strokeWidth=2;fontSize=13;fontStyle=1;fontColor=#0f172a;" vertex="1" parent="1">
+          <mxGeometry x="680" y="110" width="240" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="auth" value="Authentication &amp; Role Detection&#10;(JWT Token &amp; User Session)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#475569;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="680" y="195" width="240" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_dec" value="User Role?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#92400e;" vertex="1" parent="1">
+          <mxGeometry x="730" y="275" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_box" value="PATIENT PORTAL (Rahul Sharma)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#0369a1;fontColor=#ffffff;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="460" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_dash" value="Patient Unified Dashboard&#10;• ABHA Health ID: MB-2026-487139&#10;• Health Metrics &amp; Medical History" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=1.5;fontSize=11;fontColor=#0369a1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_qr" value="Emergency Medical QR Profile&#10;• 1-Click First Responder Access&#10;• Blood Group, Allergies, Contacts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#ef4444;strokeWidth=1.5;fontSize=11;fontColor=#991b1b;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_book" value="Hospital &amp; Doctor Booking&#10;• Browse Partner Hospitals&#10;• Select Specialist (Dr. Aarav Sharma)&#10;• Pick Slot &amp; Confirm Appointment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=1.5;fontSize=11;fontColor=#0369a1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="100" y="515" width="220" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_pin" value="Zero-Trust Access Control&#10;• Master Access PIN (1234)&#10;• Granular Doctor Grants&#10;• Real-Time Revocation &amp; Audit Logs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=1.5;fontSize=11;fontColor=#92400e;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="340" y="515" width="220" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_box" value="DOCTOR COMMAND CENTER (Dr. Aarav Sharma)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4f46e5;strokeColor=#4338ca;fontColor=#ffffff;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="370" width="460" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_dash" value="Doctor Dashboard &amp; Queue&#10;• Today's Scheduled Consultations&#10;• Patient Roster &amp; Appointment Status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#6366f1;strokeWidth=1.5;fontSize=11;fontColor=#3730a3;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="420" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_lookup" value="Patient Lookup by Health ID&#10;(MB-2026-487139)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#6366f1;strokeWidth=1.5;fontSize=11;fontColor=#3730a3;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="420" width="220" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_verify" value="Verify PIN / Active Consent?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#92400e;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="515" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="d_deny" value="Access Denied&#10;(Patient Consent Required)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#b91c1c;strokeWidth=1.5;fontSize=11;fontColor=#991b1b;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="525" width="160" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_box" value="LEVEL 4 AMBIENT CLINICAL SCRIBE &amp; TRANSCRIBER CORE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#334155;fontColor=#38bdf8;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="550" y="620" width="500" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_init" value="Initialize Clinical Scribe Encounter&#10;(/doctor/patient/MB-2026-487139/scribe)&#10;Loads Longitudinal Patient Chart" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#475569;strokeWidth=1.5;fontSize=11;fontColor=#1e293b;" vertex="1" parent="1">
+          <mxGeometry x="680" y="670" width="240" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_rec" value="Live Consultation Audio Capture&#10;• In-App Mic Recording / Demo Audio&#10;• Bilingual Dialogue (Doctor &amp; Patient)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0e7ff;strokeColor=#4f46e5;strokeWidth=1.5;fontSize=11;fontColor=#312e81;" vertex="1" parent="1">
+          <mxGeometry x="680" y="750" width="240" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_groq" value="Groq Cloud Whisper Large-v3&#10;• Sub-second ASR (~11s total turnaround)&#10;• Word-level Timestamps &amp; Confidence" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffedd5;strokeColor=#ea580c;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#9a3412;" vertex="1" parent="1">
+          <mxGeometry x="680" y="830" width="240" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_engine" value="Level 4 Deterministic Clinical Engine (l4_clinical_engine.py)&#10;━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&#10;1. Number &amp; Vital Lock: BP / Vitals strictly anchored to speech&#10;2. Dietary &amp; Lifestyle Extraction: &quot;Drink warm water morning &amp; night&quot;&#10;3. Verbatim Quote Citation Grounding: [1], [2] audio timestamp chips" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;strokeWidth=2;fontSize=11;fontColor=#14532d;align=left;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="580" y="910" width="440" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_review" value="Physician Review &amp; Safety Verification&#10;• Review Interactive SOAP Note&#10;• Click Citation Chips to Verify Exact Quotes&#10;• Resolve Mandatory Clinical Confirmations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=1.5;fontSize=11;fontColor=#0369a1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1020" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="s_sign" value="Doctor Signs Clinical Note&#10;(Dr. Aarav Sharma Sign-Off)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#16a34a;strokeColor=#15803d;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1115" width="200" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_soap" value="TRACK A: Structured SOAP Note&#10;• Subjective: Patient symptoms&#10;• Objective: Verified vitals&#10;• Assessment: Clinical diagnoses&#10;• Plan: Lifestyle, diet &amp; medications" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#64748b;strokeWidth=1.5;fontSize=11;fontColor=#0f172a;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1195" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_indic" value="TRACK B: Multilingual Takeaway&#10;• 7 Indic Languages:&#10;  Hindi, Bengali, Tamil, Telugu,&#10;  Marathi, Gujarati, English&#10;• Patient-Friendly Adherence Guidance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=1.5;fontSize=11;fontColor=#92400e;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1195" width="280" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_fhir" value="ABDM / HL7 FHIR R4 Bundle&#10;• Composition Resource&#10;• Condition &amp; Observation&#10;• MedicationStatement Resources&#10;• Interoperable National Health Stack" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#6366f1;strokeWidth=1.5;fontSize=11;fontColor=#3730a3;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1195" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="out_save" value="1-Click &quot;Save to MediBridge Records&quot;&#10;Encrypted Synchronization to Patient Health Vault" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#0369a1;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1305" width="280" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="p_view" value="Patient Dashboard Updated&#10;Rahul Sharma views verified consultation,&#10;downloads Hindi takeaway &amp; FHIR summary" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;strokeWidth=1.5;fontSize=11;fontColor=#14532d;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1390" width="280" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="end" value="Complete: Care Delivered &amp; Synced" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=#334155;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#38bdf8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1475" width="200" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_s_auth" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;endArrow=block;endFill=1;" edge="1" parent="1" source="start" target="auth">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_auth_dec" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#475569;endArrow=block;endFill=1;" edge="1" parent="1" source="auth" target="role_dec">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dec_p" value="Patient" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0284c7;fontColor=#0284c7;fontStyle=1;endArrow=block;endFill=1;" edge="1" parent="1" source="role_dec" target="p_box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dec_d" value="Doctor" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4f46e5;fontColor=#4f46e5;fontStyle=1;endArrow=block;endFill=1;" edge="1" parent="1" source="role_dec" target="d_box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pbox_dash" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="p_box" target="p_dash">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dash_qr" value="Emergency" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#ef4444;fontColor=#ef4444;endArrow=block;endFill=1;" edge="1" parent="1" source="p_dash" target="p_qr">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dash_book" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="p_dash" target="p_book">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_book_pin" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#d97706;endArrow=block;endFill=1;" edge="1" parent="1" source="p_book" target="p_pin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dbox_dash" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#4f46e5;endArrow=block;endFill=1;" edge="1" parent="1" source="d_box" target="d_dash">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_dash_lookup" value="Select Patient" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#4f46e5;endArrow=block;endFill=1;" edge="1" parent="1" source="d_dash" target="d_lookup">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_lookup_ver" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#4f46e5;endArrow=block;endFill=1;" edge="1" parent="1" source="d_lookup" target="d_verify">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ver_deny" value="No PIN / Denied" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#b91c1c;fontColor=#b91c1c;endArrow=block;endFill=1;" edge="1" parent="1" source="d_verify" target="d_deny">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pin_ver" value="Grant PIN Access" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeDasharray=4 4;strokeColor=#16a34a;fontColor=#16a34a;endArrow=block;endFill=1;" edge="1" parent="1" source="p_pin" target="d_verify">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ver_scribe" value="Consent Verified" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16a34a;fontColor=#16a34a;endArrow=block;endFill=1;" edge="1" parent="1" source="d_verify" target="s_box">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_sbox_init" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#475569;endArrow=block;endFill=1;" edge="1" parent="1" source="s_box" target="s_init">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_init_rec" value="Start Audio" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#4f46e5;endArrow=block;endFill=1;" edge="1" parent="1" source="s_init" target="s_rec">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rec_groq" value="Stream Audio" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#ea580c;endArrow=block;endFill=1;" edge="1" parent="1" source="s_rec" target="s_groq">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_groq_engine" value="11s Raw ASR" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16a34a;fontColor=#16a34a;endArrow=block;endFill=1;" edge="1" parent="1" source="s_groq" target="s_engine">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_engine_rev" value="Synthesized Notes" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="s_engine" target="s_review">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_rev_sign" value="Physician Approves" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16a34a;endArrow=block;endFill=1;" edge="1" parent="1" source="s_review" target="s_sign">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_sign_soap" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#64748b;endArrow=block;endFill=1;" edge="1" parent="1" source="s_sign" target="out_soap">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_sign_indic" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#d97706;endArrow=block;endFill=1;" edge="1" parent="1" source="s_sign" target="out_indic">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_sign_fhir" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#6366f1;endArrow=block;endFill=1;" edge="1" parent="1" source="s_sign" target="out_fhir">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_soap_save" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="out_soap" target="out_save">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_indic_save" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="out_indic" target="out_save">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_fhir_save" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1.5;strokeColor=#0284c7;endArrow=block;endFill=1;" edge="1" parent="1" source="out_fhir" target="out_save">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_save_pview" value="Real-time Push" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16a34a;fontColor=#16a34a;endArrow=block;endFill=1;" edge="1" parent="1" source="out_save" target="p_view">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pview_end" value="" style="edgeStyle=straight;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#0f172a;endArrow=block;endFill=1;" edge="1" parent="1" source="p_view" target="end">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

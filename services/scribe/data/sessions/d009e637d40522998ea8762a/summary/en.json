@@ -1,0 +1,73 @@
+{
+ "lang": "en",
+ "generated_at": "2026-10-20T20:55:06+00:00",
+ "basis_version": 1,
+ "doctor": "Dr. Aarav Sharma",
+ "visit_date": "2026-10-20",
+ "patient": "Rahul Sharma",
+ "prose": {
+  "why_you_came": "You attended consultation to discuss your current symptoms and health status.",
+  "what_doctor_said": "The doctor examined you, assessed your clinical condition, and recommended targeted medical management.",
+  "home_care": "Take your prescribed medications regularly with water, stay well hydrated, and follow lifestyle precautions."
+ },
+ "back_translation": null,
+ "medicines": {
+  "current": [],
+  "only_if": [],
+  "stop": []
+ },
+ "tests": [],
+ "follow_up": [],
+ "warning_signs": [],
+ "questions": [],
+ "gates": [
+  {
+   "id": "number_lock",
+   "ok": true,
+   "detail": "all numbers and drug names come from confirmed assertions"
+  },
+  {
+   "id": "readability",
+   "ok": false,
+   "detail": "Flesch-Kincaid grade 15.4 (allowed 4-9)",
+   "grade": 15.4
+  },
+  {
+   "id": "no_new_content",
+   "ok": true,
+   "detail": "verifier found no added content"
+  },
+  {
+   "id": "must_confirm",
+   "ok": true,
+   "detail": "built from signed version v1 (all must-confirm items confirmed)"
+  }
+ ],
+ "approved": false,
+ "approved_by": null,
+ "approved_at": null,
+ "demo_fixture": false,
+ "provenance": [
+  {
+   "stage": "patient_prose",
+   "role": "GENERATOR",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "prose-v3",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  },
+  {
+   "stage": "no_new_content",
+   "role": "VERIFIER",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "nonew-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  }
+ ],
+ "gates_ok": false
+}

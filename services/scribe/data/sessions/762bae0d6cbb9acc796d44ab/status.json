@@ -1,0 +1,1 @@
+{"state": "running", "stages": {"asr": {"state": "running"}, "roles": {"state": "pending"}, "extraction": {"state": "pending"}, "composer": {"state": "pending"}, "verification": {"state": "pending"}}, "error": null, "updated": "2026-10-20T20:23:32+00:00"}

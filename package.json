@@ -1,0 +1,27 @@
+{
+  "name": "medibridge-platform",
+  "version": "2.0.0",
+  "description": "MediBridge - ABDM-Compliant Zero-Trust Health Data Exchange, Ambient Clinical Scribe & AI Diagnostic Copilot",
+  "private": true,
+  "scripts": {
+    "start": "node start_all.js",
+    "dev": "node start_all.js",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "scribe": "cd services/scribe && python app.py serve",
+    "verify": "python scripts/verify_platform.py"
+  },
+  "keywords": [
+    "healthcare",
+    "abdm",
+    "dpdp",
+    "zero-trust",
+    "clinical-ai",
+    "huggingface",
+    "groq",
+    "whisper",
+    "electronic-health-records"
+  ],
+  "author": "MediBridge Engineering Team",
+  "license": "MIT"
+}

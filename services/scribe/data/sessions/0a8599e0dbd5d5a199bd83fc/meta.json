@@ -1,0 +1,48 @@
+{
+ "id": "0a8599e0dbd5d5a199bd83fc",
+ "created": "2026-10-20T21:03:50+00:00",
+ "consult_id": "upload",
+ "consent": true,
+ "consent_at": "2026-10-20T21:03:56+00:00",
+ "audio_file": "original.webm",
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 54,
+   "sex": "male",
+   "mrn": "MB-2026-487139"
+  },
+  "active_medications": [
+   {
+    "name": "Metformin",
+    "dose": "500 mg",
+    "unit": "",
+    "frequency": "Twice daily after meals"
+   },
+   {
+    "name": "Amlodipine",
+    "dose": "5 mg",
+    "unit": "",
+    "frequency": "Once daily morning"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "reported allergy"
+   },
+   {
+    "substance": "Sulfa drugs",
+    "reaction": "reported allergy"
+   }
+  ],
+  "problem_list": [
+   "Type 2 Diabetes Mellitus",
+   "Essential Hypertension"
+  ],
+  "prior_note_excerpt": "2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-09-15 (Comprehensive Metabolic Panel & Lipid Profile): HbA1c: 7.1% (improved from 8.2%). Total Cholesterol: 185 mg/dL, LDL: 110 mg/dL, Triglycerides: 155 mg/dL. Renal profile within normal limits.",
+  "recordsCount": 5
+ },
+ "audio_sha256": "615b9cade9706ca67a166cec29abcd744e8263f7af59f6aaedcb422d8f84f605"
+}

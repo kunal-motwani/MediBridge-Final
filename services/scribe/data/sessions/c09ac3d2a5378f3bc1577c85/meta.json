@@ -1,0 +1,37 @@
+{
+ "id": "c09ac3d2a5378f3bc1577c85",
+ "created": "2026-10-20T20:26:33+00:00",
+ "consult_id": "upload",
+ "consent": true,
+ "consent_at": "2026-10-20T20:27:00+00:00",
+ "audio_file": "original.wav",
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 34,
+   "sex": "Male",
+   "mrn": "MB-2026-100001"
+  },
+  "active_medications": [
+   {
+    "name": "Amlodipine",
+    "dose": "5",
+    "unit": "mg",
+    "frequency": "OD"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "rash"
+   }
+  ],
+  "problem_list": [
+   "Hypertension"
+  ],
+  "prior_note_excerpt": "Routine outpatient follow up."
+ },
+ "audio_sha256": "8f7da5652eccccf35a6260013d239220e9f662e685a82af7a922e2b493a3a343",
+ "first_signed_at": "2026-10-20T20:34:19+00:00"
+}

@@ -1,0 +1,55 @@
+{
+ "id": "f607b700eba220653bd7446b",
+ "created": "2026-10-23T20:10:17+00:00",
+ "consult_id": "upload",
+ "consent": true,
+ "consent_at": "2026-10-23T20:10:42+00:00",
+ "audio_file": "original.webm",
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 54,
+   "sex": "male",
+   "mrn": "MB-2026-487139"
+  },
+  "active_medications": [
+   {
+    "name": "Metformin",
+    "dose": "500 mg",
+    "unit": "",
+    "frequency": "Twice daily after meals"
+   },
+   {
+    "name": "Amlodipine",
+    "dose": "5 mg",
+    "unit": "",
+    "frequency": "Once daily morning"
+   },
+   {
+    "name": "Azitromycin",
+    "dose": "500 mg ",
+    "unit": "",
+    "frequency": "1-0-1"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "reported allergy"
+   },
+   {
+    "substance": "Sulfa drugs",
+    "reaction": "reported allergy"
+   }
+  ],
+  "problem_list": [
+   "Type 2 Diabetes Mellitus",
+   "Essential Hypertension"
+  ],
+  "prior_note_excerpt": "2026-09-15 (Comprehensive Metabolic Panel & Lipid Profile): HbA1c: 7.1% (improved from 8.2%). Total Cholesterol: 185 mg/dL, LDL: 110 mg/dL, Triglycerides: 155 mg/dL. Renal profile within normal limits.\n2026-08-10 (Echocardiogram & Cardiac Assessment): Left ventricular ejection fraction 60%. Mild concentric left ventricular hypertrophy. No regional wall motion abnormalities.\n2026-07-02 (Psychiatric Wellness Consultation & Mild Anxiety Evaluation): Patient reports mild insomnia and work stress over last 3 months. Prescribed short-term Hydroxyzine 10mg PRN for nocturnal insomnia.",
+  "recordsCount": 4
+ },
+ "audio_sha256": "df30969a6148bf7932c1eaa8e6a64504f088d34d6fb61a4e45df945e3eed9fcf",
+ "first_signed_at": "2026-10-23T20:11:19+00:00"
+}

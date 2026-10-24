@@ -1,0 +1,225 @@
+{
+ "id": "consult_02_gastritis",
+ "title": "Epigastric pain follow-up (synthetic)",
+ "chart": {
+  "patient": {
+   "name": "Sunita Devi (synthetic)",
+   "age": 41,
+   "sex": "female",
+   "mrn": "DEMO-0002"
+  },
+  "active_medications": [
+   {
+    "name": "pantoprazole",
+    "dose": "40",
+    "unit": "mg",
+    "frequency": "OD"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "sulfa",
+    "reaction": "hives"
+   }
+  ],
+  "problem_list": [
+   "Gastritis"
+  ],
+  "prior_note_excerpt": "Visit 2026-08-01: epigastric pain, started pantoprazole 40 mg OD for 4 weeks."
+ },
+ "utterances": [
+  {
+   "speaker": "doctor",
+   "text": "Namaste Sunita ji, kaise hain aap? Did the rain stop outside?"
+  },
+  {
+   "speaker": "patient",
+   "text": "Haan doctor, finally. The pain in my upper stomach is better but not gone."
+  },
+  {
+   "speaker": "doctor",
+   "text": "Any vomiting or black stools?"
+  },
+  {
+   "speaker": "patient",
+   "text": "No vomiting. No black stools."
+  },
+  {
+   "speaker": "patient",
+   "text": "I stopped the pantoprazole after two weeks because I felt better."
+  },
+  {
+   "speaker": "doctor",
+   "text": "Do you have any allergies?"
+  },
+  {
+   "speaker": "patient",
+   "text": "Sulfa medicines give me hives."
+  },
+  {
+   "speaker": "patient",
+   "text": "My sister has stomach ulcers."
+  },
+  {
+   "speaker": "doctor",
+   "text": "Your abdomen is mildly tender in the upper middle area."
+  },
+  {
+   "speaker": "doctor",
+   "text": "Restart pantoprazole 40 milligrams once daily before breakfast for 4 weeks."
+  },
+  {
+   "speaker": "doctor",
+   "text": "If the pain becomes severe at night, you can take an antacid gel 10 ml."
+  },
+  {
+   "speaker": "patient",
+   "text": "Can I keep drinking tea?"
+  },
+  {
+   "speaker": "doctor",
+   "text": "Come back in 4 weeks."
+  }
+ ],
+ "traps": [
+  {
+   "id": "T1",
+   "name": "Family history not attributed to patient",
+   "expected": "Sister's ulcers only as family history.",
+   "checks": [
+    {
+     "kind": "context_required",
+     "term": "sister",
+     "context": [
+      "family"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T2",
+   "name": "Negation preserved",
+   "expected": "No vomiting, no black stools.",
+   "checks": [
+    {
+     "kind": "negated",
+     "term": "vomiting"
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T3",
+   "name": "Stopped drug",
+   "expected": "Pantoprazole stopped by patient after two weeks.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "pantoprazole",
+     "any": [
+      "stop",
+      "stopped",
+      "discontinu"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T4",
+   "name": "Hypothetical instruction",
+   "expected": "Antacid only if severe night pain.",
+   "checks": [
+    {
+     "kind": "qualified",
+     "term": "antacid",
+     "cues": [
+      "if ",
+      "conditional",
+      "as needed",
+      "prn",
+      "sos"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T6",
+   "name": "Allergy captured",
+   "expected": "Sulfa allergy documented.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "sulfa",
+     "any": [
+      "allerg",
+      "hives"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T7",
+   "name": "No invented exam",
+   "expected": "Tenderness kept; no invented chest/heart exam.",
+   "checks": [
+    {
+     "kind": "forbid_pattern",
+     "pattern": "(heart sounds|s1\\s*s2|chest (is )?clear|lungs (are )?clear)"
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T8",
+   "name": "Small talk excluded",
+   "expected": "Rain chatter absent.",
+   "checks": [
+    {
+     "kind": "absent",
+     "terms": [
+      "rain"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T9",
+   "name": "Dose exact",
+   "expected": "Pantoprazole 40 mg once daily, 4 weeks.",
+   "checks": [
+    {
+     "kind": "all_in_one_sentence",
+     "term": "pantoprazole",
+     "all": [
+      "40",
+      "mg",
+      "4 weeks|four weeks"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T10",
+   "name": "Unanswered question surfaced",
+   "expected": "Tea question surfaced.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "tea",
+     "any": [
+      "ask",
+      "question",
+      "?"
+     ]
+    }
+   ],
+   "structural": []
+  }
+ ]
+}

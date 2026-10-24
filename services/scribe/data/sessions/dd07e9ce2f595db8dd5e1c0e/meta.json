@@ -1,0 +1,11 @@
+{
+ "id": "dd07e9ce2f595db8dd5e1c0e",
+ "created": "2026-10-20T20:23:03+00:00",
+ "consult_id": "upload",
+ "consent": true,
+ "consent_at": "2026-10-20T20:23:03+00:00",
+ "audio_file": "original.webm",
+ "audio_placeholder": false,
+ "chart": null,
+ "audio_sha256": "a15364fd9949d60f6d3eab9440f4bf37b0c4859701f780040403d8bfa488533b"
+}

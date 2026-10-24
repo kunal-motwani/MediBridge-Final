@@ -1,0 +1,199 @@
+{
+ "kind": "note_signoff",
+ "session_id": "f607b700eba220653bd7446b",
+ "signed_by": "Dr. Aarav Sharma",
+ "signed_at": "2026-10-23T20:11:19+00:00",
+ "note": {
+  "sections": {
+   "subjective": [],
+   "family_history": [],
+   "objective": [],
+   "assessment": [],
+   "plan": [
+    {
+     "id": "S01",
+     "text": "Advised: Drink warm water two times a day and he should not eat oily food.",
+     "assertion_ids": [
+      "A01"
+     ],
+     "kind": "fact",
+     "edited": false
+    }
+   ]
+  },
+  "not_captured": [
+   "Physical examination (no findings spoken)",
+   "Respiratory examination",
+   "Cardiovascular examination",
+   "Abdominal examination",
+   "Neurological examination",
+   "Vital sign: Temperature",
+   "Vital sign: Blood pressure",
+   "Vital sign: Pulse / heart rate",
+   "Vital sign: Oxygen saturation",
+   "Vital sign: Respiratory rate",
+   "Assessment / diagnosis"
+  ]
+ },
+ "assertions": [
+  {
+   "entity": "Drink warm water two times a day and he should not eat oily food",
+   "type": "instruction",
+   "polarity": "affirmed",
+   "experiencer": "patient",
+   "family_relation": null,
+   "temporality": "current",
+   "certainty": "stated",
+   "action": null,
+   "dose": null,
+   "unit": null,
+   "frequency": null,
+   "route": null,
+   "duration": null,
+   "timing_of_day": null,
+   "with_food": null,
+   "value": null,
+   "condition": null,
+   "utterance_ids": [
+    "U01"
+   ],
+   "quote": "suppose uh so the patient needs to drink warm water two times a day and he should not eat oily food",
+   "flag": "none",
+   "flag_reasons": [],
+   "id": "A01",
+   "speaker_role": "patient",
+   "spans": [
+    {
+     "start_ms": 0,
+     "end_ms": 12220,
+     "utterance_id": "U01"
+    }
+   ],
+   "frequency_code": null,
+   "repaired_terms": [],
+   "candidates": [],
+   "quote_verified": true,
+   "origin": "extraction",
+   "heard_term": null
+  }
+ ],
+ "summary": null,
+ "provenance": {
+  "app_version": "0.9.0",
+  "prompt_versions": {
+   "roles": "roles-v3",
+   "extraction": "extract-v5",
+   "composer": "compose-v4",
+   "precision": "precision-v2",
+   "omission": "omission-v3",
+   "patient_prose": "prose-v3",
+   "no_new_content": "nonew-v2",
+   "translate": "translate-v2",
+   "back_translate": "backtrans-v2",
+   "baseline": "baseline-v2"
+  },
+  "audio_sha256_original": "df30969a6148bf7932c1eaa8e6a64504f088d34d6fb61a4e45df945e3eed9fcf",
+  "audio_sha256_16k": "dde3450b78f58d0a210e3db36e146085b75684092086af135072af3b7c13e38b",
+  "asr_provider": "openai_compatible",
+  "llm_provider": "demo",
+  "verifier_provider": "demo",
+  "generator_model": null,
+  "verifier_model": null,
+  "demo_fixture": false,
+  "consent": true,
+  "consent_at": "2026-10-23T20:10:42+00:00",
+  "stages": {
+   "asr": {
+    "at": "2026-10-23T20:10:45+00:00",
+    "calls": [
+     {
+      "stage": "asr",
+      "provider": "openai_compatible",
+      "model": "whisper-large-v3",
+      "latency_ms": 2690
+     }
+    ]
+   },
+   "roles": {
+    "at": "2026-10-23T20:10:45+00:00",
+    "calls": [
+     {
+      "stage": "roles",
+      "role": "GENERATOR",
+      "provider": "l4_engine",
+      "model": "l4-deterministic-engine",
+      "prompt_version": "roles-v3",
+      "cache": "heuristic",
+      "attempts": 0,
+      "latency_ms": 2
+     }
+    ]
+   },
+   "extraction": {
+    "at": "2026-10-23T20:10:45+00:00",
+    "calls": [
+     {
+      "stage": "extraction",
+      "role": "GENERATOR",
+      "provider": "l4_engine",
+      "model": "l4-deterministic-engine",
+      "prompt_version": "extract-v5",
+      "cache": "heuristic",
+      "attempts": 0,
+      "latency_ms": 4
+     }
+    ]
+   },
+   "composer": {
+    "at": "2026-10-23T20:10:45+00:00",
+    "calls": [
+     {
+      "stage": "composer",
+      "role": "GENERATOR",
+      "provider": "l4_engine",
+      "model": "l4-deterministic-engine",
+      "prompt_version": "compose-v4",
+      "cache": "heuristic",
+      "attempts": 0,
+      "latency_ms": 0
+     }
+    ]
+   },
+   "verification": {
+    "at": "2026-10-23T20:10:45+00:00",
+    "calls": [
+     {
+      "stage": "precision",
+      "role": "VERIFIER",
+      "provider": "l4_engine",
+      "model": "l4-deterministic-engine",
+      "prompt_version": "precision-v2",
+      "cache": "heuristic",
+      "attempts": 0,
+      "latency_ms": 0
+     },
+     {
+      "stage": "omission",
+      "role": "VERIFIER",
+      "provider": "l4_engine",
+      "model": "l4-deterministic-engine",
+      "prompt_version": "omission-v3",
+      "cache": "heuristic",
+      "attempts": 0,
+      "latency_ms": 0
+     }
+    ]
+   }
+  },
+  "doctor_events": [
+   {
+    "at": "2026-10-23T20:11:19+00:00",
+    "kind": "sign_off",
+    "target": "Dr. Aarav Sharma",
+    "detail": null
+   }
+  ]
+ },
+ "version": 1,
+ "content_hash": "5971a3371fb4b36491c9d16a841b354bf63b27c1789d5e0c4ad0e609d4b1335b"
+}

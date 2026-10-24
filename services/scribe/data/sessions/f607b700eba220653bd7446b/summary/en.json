@@ -1,0 +1,73 @@
+{
+ "lang": "en",
+ "generated_at": "2026-10-23T20:11:19+00:00",
+ "basis_version": 1,
+ "doctor": "Dr. Aarav Sharma",
+ "visit_date": "2026-10-23",
+ "patient": "Rahul Sharma",
+ "prose": {
+  "why_you_came": "You attended consultation to discuss your health status and daily care advice.",
+  "what_doctor_said": "The doctor advised drinking warm water regularly in the morning and at night.",
+  "home_care": "Drink warm water in the morning and at night as advised by the doctor, stay well hydrated, and rest."
+ },
+ "back_translation": null,
+ "medicines": {
+  "current": [],
+  "only_if": [],
+  "stop": []
+ },
+ "tests": [],
+ "follow_up": [],
+ "warning_signs": [],
+ "questions": [],
+ "gates": [
+  {
+   "id": "number_lock",
+   "ok": true,
+   "detail": "all numbers and drug names come from confirmed assertions"
+  },
+  {
+   "id": "readability",
+   "ok": true,
+   "detail": "Flesch-Kincaid grade 8.6 (allowed 4-9)",
+   "grade": 8.6
+  },
+  {
+   "id": "no_new_content",
+   "ok": true,
+   "detail": "verifier found no added content"
+  },
+  {
+   "id": "must_confirm",
+   "ok": true,
+   "detail": "built from signed version v1 (all must-confirm items confirmed)"
+  }
+ ],
+ "approved": false,
+ "approved_by": null,
+ "approved_at": null,
+ "demo_fixture": false,
+ "provenance": [
+  {
+   "stage": "patient_prose",
+   "role": "GENERATOR",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "prose-v3",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  },
+  {
+   "stage": "no_new_content",
+   "role": "VERIFIER",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "nonew-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  }
+ ],
+ "gates_ok": true
+}

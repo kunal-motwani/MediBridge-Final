@@ -1,0 +1,76 @@
+{
+ "lang": "hi",
+ "generated_at": "2026-10-20T20:34:31+00:00",
+ "basis_version": 1,
+ "doctor": "Dr. Aarav Sharma",
+ "visit_date": "2026-10-20",
+ "patient": "Rahul Sharma",
+ "prose": {
+  "why_you_came": "आप अपने लक्षणों और स्वास्थ्य संबंधी समस्या की जांच करवाने के लिए डॉक्टर के पास आए थे।",
+  "what_doctor_said": "डॉक्टर ने आपकी जांच की, आपकी स्वास्थ्य स्थिति का मूल्यांकन किया और उचित उपचार योजना की सलाह दी।",
+  "home_care": "अपनी दवाइयां समय पर नियमित रूप से लें, पर्याप्त पानी पिएं और पर्याप्त आराम करें।"
+ },
+ "back_translation": {
+  "why_you_came": "You attended consultation to discuss your current symptoms and health status.",
+  "what_doctor_said": "The doctor examined you, assessed your clinical condition, and recommended targeted medical management.",
+  "home_care": "Take your prescribed medications regularly with water, stay well hydrated, and follow lifestyle precautions."
+ },
+ "medicines": {
+  "current": [],
+  "only_if": [],
+  "stop": []
+ },
+ "tests": [],
+ "follow_up": [],
+ "warning_signs": [],
+ "questions": [],
+ "gates": [
+  {
+   "id": "number_lock",
+   "ok": true,
+   "detail": "every locked number and drug name re-inserted exactly once"
+  },
+  {
+   "id": "readability",
+   "ok": false,
+   "detail": "English source grade 15.4; readability formula not computed for Hindi"
+  },
+  {
+   "id": "back_translation",
+   "ok": true,
+   "detail": "back-translation equivalent"
+  },
+  {
+   "id": "must_confirm",
+   "ok": true,
+   "detail": "built from signed version v1 (all must-confirm items confirmed)"
+  }
+ ],
+ "approved": false,
+ "approved_by": null,
+ "approved_at": null,
+ "demo_fixture": false,
+ "provenance": [
+  {
+   "stage": "translate:hi",
+   "role": "GENERATOR",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "translate-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  },
+  {
+   "stage": "back_translate:hi",
+   "role": "VERIFIER",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "backtrans-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  }
+ ],
+ "gates_ok": false
+}

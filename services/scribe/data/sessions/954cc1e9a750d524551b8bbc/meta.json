@@ -1,0 +1,47 @@
+{
+ "id": "954cc1e9a750d524551b8bbc",
+ "created": "2026-10-21T03:25:33+00:00",
+ "consult_id": "upload",
+ "consent": false,
+ "consent_at": null,
+ "audio_file": null,
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 54,
+   "sex": "male",
+   "mrn": "MB-2026-487139"
+  },
+  "active_medications": [
+   {
+    "name": "Metformin",
+    "dose": "500 mg",
+    "unit": "",
+    "frequency": "Twice daily after meals"
+   },
+   {
+    "name": "Amlodipine",
+    "dose": "5 mg",
+    "unit": "",
+    "frequency": "Once daily morning"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "reported allergy"
+   },
+   {
+    "substance": "Sulfa drugs",
+    "reaction": "reported allergy"
+   }
+  ],
+  "problem_list": [
+   "Type 2 Diabetes Mellitus",
+   "Essential Hypertension"
+  ],
+  "prior_note_excerpt": "2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nNone recorded.\n\n### Objective\nNone recorded.\n\n### Assessment\nNone recorded.\n\n### Plan\nAdvised: Drink hot water in morning and evening..\n2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.",
+  "recordsCount": 6
+ }
+}

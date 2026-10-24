@@ -1,0 +1,609 @@
+{
+ "id": "demo",
+ "title": "Cough and fever, diabetic patient (synthetic)",
+ "chart": {
+  "patient": {
+   "name": "Ramesh Kumar (synthetic)",
+   "age": 54,
+   "sex": "male",
+   "mrn": "DEMO-0001"
+  },
+  "active_medications": [
+   {
+    "name": "metformin",
+    "dose": "500",
+    "unit": "mg",
+    "frequency": "BD"
+   },
+   {
+    "name": "amlodipine",
+    "dose": "5",
+    "unit": "mg",
+    "frequency": "OD"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "penicillin",
+    "reaction": "rash"
+   }
+  ],
+  "problem_list": [
+   "Type 2 diabetes mellitus",
+   "Hypertension"
+  ],
+  "prior_note_excerpt": "Visit 2026-06-10: HbA1c 7.8%. BP 136/84. Advised diet control and walking 30 minutes daily. Continue metformin 500 mg BD and amlodipine 5 mg OD."
+ },
+ "utterances": [
+  {
+   "speaker": "doctor",
+   "text": "Good morning Mr. Kumar, please have a seat.",
+   "asr_text": "Good morning Mr. Kumar, please have a seat.",
+   "start_ms": 1500,
+   "end_ms": 4576
+  },
+  {
+   "speaker": "patient",
+   "text": "Good morning doctor. Arre, the traffic was terrible today, one hour from Sector 22.",
+   "asr_text": "Good morning doctor. Arre, the traffic was terrible today, one hour from Sector 22.",
+   "start_ms": 5226,
+   "end_ms": 11008
+  },
+  {
+   "speaker": "doctor",
+   "text": "Everyone is out after the cricket match.",
+   "asr_text": "Everyone is out after the cricket match.",
+   "start_ms": 11795,
+   "end_ms": 14651
+  },
+  {
+   "speaker": "doctor",
+   "text": "So, what brings you in today?",
+   "asr_text": "So, what brings you in today?",
+   "start_ms": 15575,
+   "end_ms": 17749
+  },
+  {
+   "speaker": "patient",
+   "text": "I have had a cough for about two weeks, and fever at night.",
+   "asr_text": "I have had a cough for about two weeks, and fever at night.",
+   "start_ms": 18410,
+   "end_ms": 23090
+  },
+  {
+   "speaker": "doctor",
+   "text": "Is the cough dry, or are you bringing up phlegm?",
+   "asr_text": "Is the cough dry, or are you bringing up phlegm?",
+   "start_ms": 23888,
+   "end_ms": 27572
+  },
+  {
+   "speaker": "patient",
+   "text": "Mostly dry, but sometimes thoda yellow phlegm in the morning.",
+   "asr_text": "Mostly dry, but sometimes thoda yellow phlegm in the morning.",
+   "start_ms": 28507,
+   "end_ms": 32737
+  },
+  {
+   "speaker": "doctor",
+   "text": "Any chest pain or breathlessness?",
+   "asr_text": "Any chest pain or breathlessness?",
+   "start_ms": 33409,
+   "end_ms": 35615
+  },
+  {
+   "speaker": "patient",
+   "text": "No chest pain. But I get a little breathless when I climb stairs.",
+   "asr_text": "No chest pain. But I get a little breathless when I climb stairs.",
+   "start_ms": 36424,
+   "end_ms": 41356
+  },
+  {
+   "speaker": "doctor",
+   "text": "Any blood in the phlegm?",
+   "asr_text": "Any blood in the phlegm?",
+   "start_ms": 42302,
+   "end_ms": 44130
+  },
+  {
+   "speaker": "patient",
+   "text": "No, no blood.",
+   "asr_text": "No, no blood.",
+   "start_ms": 44813,
+   "end_ms": 45781
+  },
+  {
+   "speaker": "doctor",
+   "text": "How high has the fever been?",
+   "asr_text": "How high has the fever been?",
+   "start_ms": 46601,
+   "end_ms": 48775
+  },
+  {
+   "speaker": "patient",
+   "text": "I checked once at home, it was 100.8.",
+   "asr_text": "I checked once at home, it was 100.8.",
+   "start_ms": 49732,
+   "end_ms": 52556
+  },
+  {
+   "speaker": "doctor",
+   "text": "Are you taking your diabetes medicines regularly?",
+   "asr_text": "Are you taking your diabetes medicines regularly?",
+   "start_ms": 53250,
+   "end_ms": 56484
+  },
+  {
+   "speaker": "patient",
+   "text": "Actually doctor, I stopped the metformin last week because it was upsetting my stomach.",
+   "asr_text": "Actually doctor, I stopped the metformin last week because it was upsetting my stomach.",
+   "start_ms": 57315,
+   "end_ms": 63349
+  },
+  {
+   "speaker": "doctor",
+   "text": "Okay. Any other medicines?",
+   "asr_text": "Okay. Any other medicines?",
+   "start_ms": 64317,
+   "end_ms": 66009
+  },
+  {
+   "speaker": "patient",
+   "text": "Only the amlodipine every morning, that I am continuing.",
+   "asr_text": "Only the amlodipine every morning, that I am continuing.",
+   "start_ms": 66714,
+   "end_ms": 70556
+  },
+  {
+   "speaker": "doctor",
+   "text": "Any allergies to medicines?",
+   "asr_text": "Any allergies to medicines?",
+   "start_ms": 71398,
+   "end_ms": 73174
+  },
+  {
+   "speaker": "patient",
+   "text": "Yes, I am allergic to penicillin. I got a rash all over my body.",
+   "asr_text": "Yes, I am allergic to penicillin. I got a rash all over my body.",
+   "start_ms": 74153,
+   "end_ms": 79179
+  },
+  {
+   "speaker": "doctor",
+   "text": "Does anyone in the family have diabetes or heart problems?",
+   "asr_text": "Does anyone in the family have diabetes or heart problems?",
+   "start_ms": 79895,
+   "end_ms": 84041
+  },
+  {
+   "speaker": "patient",
+   "text": "My mother had diabetes, and my father had a heart attack at 60.",
+   "asr_text": "My mother had diabetes, and my father had a heart attack at 60.",
+   "start_ms": 84894,
+   "end_ms": 89742
+  },
+  {
+   "speaker": "doctor",
+   "text": "Do you smoke or drink?",
+   "asr_text": "Do you smoke or drink?",
+   "start_ms": 90732,
+   "end_ms": 92476
+  },
+  {
+   "speaker": "patient",
+   "text": "I used to smoke, but I quit 5 years ago. No alcohol.",
+   "asr_text": "I used to smoke, but I quit 5 years ago. No alcohol.",
+   "start_ms": 93203,
+   "end_ms": 97369
+  },
+  {
+   "speaker": "family",
+   "text": "Doctor, he still eats a lot of sweets, I keep telling him.",
+   "asr_text": "Doctor, he still eats a lot of sweets, I keep telling him.",
+   "start_ms": 98233,
+   "end_ms": 102651
+  },
+  {
+   "speaker": "doctor",
+   "text": "Okay, let me examine you. Please take a deep breath.",
+   "asr_text": "Okay, let me examine you. Please take a deep breath.",
+   "start_ms": 103652,
+   "end_ms": 107462
+  },
+  {
+   "speaker": "doctor",
+   "text": "I can hear some crackles at the right lower lung base.",
+   "asr_text": "I can hear some crackles at the right lower lung base.",
+   "start_ms": 108200,
+   "end_ms": 112356
+  },
+  {
+   "speaker": "doctor",
+   "text": "Temperature is 99.4, and blood pressure is 138 over 86.",
+   "asr_text": "Temperature is 99.4, and blood pressure is 138 over 86.",
+   "start_ms": 113231,
+   "end_ms": 117167
+  },
+  {
+   "speaker": "doctor",
+   "text": "Oxygen saturation is 96 percent.",
+   "asr_text": "Oxygen saturation is 96 percent.",
+   "start_ms": 118179,
+   "end_ms": 120343
+  },
+  {
+   "speaker": "doctor",
+   "text": "Mr. Kumar, this looks like a chest infection, possibly early pneumonia on the right side.",
+   "asr_text": "Mr. Kumar, this looks like a chest infection, possibly early pneumonia on the right side.",
+   "start_ms": 121092,
+   "end_ms": 127304
+  },
+  {
+   "speaker": "doctor",
+   "text": "Since you are allergic to penicillin, I will not give you amoxicillin.",
+   "asr_text": "Since you are allergic to penicillin, I will not give you amoxicillin.",
+   "start_ms": 128190,
+   "end_ms": 133154
+  },
+  {
+   "speaker": "doctor",
+   "text": "I am starting azithromycin 500 milligrams once daily for 5 days, after food.",
+   "asr_text": "I am starting azithromycin 500 milligrams once daily for 5 days, after food.",
+   "start_ms": 134177,
+   "end_ms": 139571
+  },
+  {
+   "speaker": "doctor",
+   "text": "If the fever goes above 102, take paracetamol 650 milligrams, not more than 3 times a day.",
+   "asr_text": "If the fever goes above 102, take paracetamol 650 milligrams, not more than 3 times a day.",
+   "start_ms": 140331,
+   "end_ms": 146983
+  },
+  {
+   "speaker": "doctor",
+   "text": "Please get a chest X-ray and a complete blood count done today.",
+   "asr_text": "Please get a chest X-ray and a complete blood count done today.",
+   "start_ms": 147880,
+   "end_ms": 152550
+  },
+  {
+   "speaker": "doctor",
+   "text": "Also an HbA1c test, to see how your sugar control has been.",
+   "asr_text": "Also an HbA1c test, to see how your sugar control has been.",
+   "start_ms": 153584,
+   "end_ms": 158086
+  },
+  {
+   "speaker": "doctor",
+   "text": "For the stomach upset, I am switching you to metformin extended release 500 milligrams once daily with dinner.",
+   "asr_text": "For the stomach upset, I am switching you to metfromin extended release 500 milligrams once daily with dinner.",
+   "start_ms": 158857,
+   "end_ms": 166569
+  },
+  {
+   "speaker": "patient",
+   "text": "Doctor, will this cough medicine affect my sugar levels?",
+   "asr_text": "Doctor, will this cough medicine affect my sugar levels?",
+   "start_ms": 167477,
+   "end_ms": 171319
+  },
+  {
+   "speaker": "doctor",
+   "text": "Drink plenty of warm fluids and take rest.",
+   "asr_text": "Drink plenty of warm fluids and take rest.",
+   "start_ms": 172364,
+   "end_ms": 175482
+  },
+  {
+   "speaker": "doctor",
+   "text": "If you feel very breathless, or the fever does not come down in 3 days, come back immediately or go to the emergency.",
+   "asr_text": "If you feel very breathless, or the fever does not come down in 3 days, come back immediately or go to the emergency.",
+   "start_ms": 176264,
+   "end_ms": 185118
+  },
+  {
+   "speaker": "doctor",
+   "text": "Come back to see me after 1 week with the reports.",
+   "asr_text": "Come back to see me after 1 week with the reports.",
+   "start_ms": 186037,
+   "end_ms": 190025
+  },
+  {
+   "speaker": "patient",
+   "text": "Okay doctor. Kal se office jaana hai, can I go to work?",
+   "asr_text": "Okay doctor. Kal se office jaana hai, can I go to work?",
+   "start_ms": 190681,
+   "end_ms": 194973
+  },
+  {
+   "speaker": "doctor",
+   "text": "Better to rest for 2 days, then you can go to the office.",
+   "asr_text": "Better to rest for 2 days, then you can go to the office.",
+   "start_ms": 195766,
+   "end_ms": 200362
+  },
+  {
+   "speaker": "family",
+   "text": "Doctor, should he avoid sweets completely?",
+   "asr_text": "Doctor, should he avoid sweets completely?",
+   "start_ms": 201292,
+   "end_ms": 204012
+  },
+  {
+   "speaker": "doctor",
+   "text": "Yes, avoid sweets and sugary drinks completely.",
+   "asr_text": "Yes, avoid sweets and sugary drinks completely.",
+   "start_ms": 204679,
+   "end_ms": 207787
+  },
+  {
+   "speaker": "patient",
+   "text": "One more thing, my neighbour gave me some hydroxyzine tablets for itching, I took 2 of them.",
+   "asr_text": "One more thing, my neighbour gave me some hydrazine tablets for itching, I took 2 of them.",
+   "start_ms": 208591,
+   "end_ms": 215243
+  },
+  {
+   "speaker": "doctor",
+   "text": "Please stop those tablets, and do not take any medicine without asking me.",
+   "asr_text": "Please stop those tablets, and do not take any medicine without asking me.",
+   "start_ms": 216184,
+   "end_ms": 221494
+  },
+  {
+   "speaker": "doctor",
+   "text": "My receptionist will give you the lab slip.",
+   "asr_text": "My receptionist will give you the lab slip.",
+   "start_ms": 222172,
+   "end_ms": 225332
+  },
+  {
+   "speaker": "patient",
+   "text": "Thank you doctor.",
+   "asr_text": "Thank you doctor thank you thank you thank you thank you.",
+   "start_ms": 226147,
+   "end_ms": 230429
+  },
+  {
+   "speaker": "doctor",
+   "text": "Take care, Mr. Kumar. Get well soon.",
+   "asr_text": "Take care, Mr. Kumar. Get well soon.",
+   "start_ms": 231381,
+   "end_ms": 233943
+  }
+ ],
+ "traps": [
+  {
+   "id": "T1",
+   "name": "Family history not attributed to patient",
+   "expected": "Mother's diabetes appears only as family history.",
+   "checks": [
+    {
+     "kind": "context_required",
+     "term": "mother",
+     "context": [
+      "family"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "assertion_field",
+     "entity": "diabetes",
+     "field": "experiencer",
+     "equals": "family_member"
+    }
+   ]
+  },
+  {
+   "id": "T2",
+   "name": "Negation preserved",
+   "expected": "Chest pain is documented as absent.",
+   "checks": [
+    {
+     "kind": "negated",
+     "term": "chest pain"
+    }
+   ],
+   "structural": [
+    {
+     "kind": "assertion_field",
+     "entity": "chest pain",
+     "field": "polarity",
+     "equals": "negated"
+    }
+   ]
+  },
+  {
+   "id": "T3",
+   "name": "Stopped drug not listed as current",
+   "expected": "Metformin documented as stopped by the patient; not as continuing 500 mg BD.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "metformin",
+     "any": [
+      "stop",
+      "stopped",
+      "discontinu",
+      "not taking"
+     ]
+    },
+    {
+     "kind": "forbid_pattern",
+     "pattern": "(continu\\w*|taking)\\s+(his\\s+|the\\s+)?metformin\\s+500\\s*mg\\s+(bd|twice)"
+    }
+   ],
+   "structural": [
+    {
+     "kind": "assertion_field",
+     "entity": "metformin",
+     "field": "action",
+     "equals": "stopped"
+    }
+   ]
+  },
+  {
+   "id": "T4",
+   "name": "Hypothetical instruction stays conditional",
+   "expected": "Paracetamol appears only as conditional advice.",
+   "checks": [
+    {
+     "kind": "qualified",
+     "term": "paracetamol",
+     "cues": [
+      "if ",
+      "conditional",
+      "as needed",
+      "when needed",
+      "prn",
+      "sos"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "assertion_field",
+     "entity": "paracetamol",
+     "field": "temporality",
+     "equals": "hypothetical"
+    }
+   ]
+  },
+  {
+   "id": "T5",
+   "name": "Look-alike drug name not silently guessed",
+   "expected": "ASR heard 'hydrazine' (hydralazine vs hydroxyzine). Must be flagged for confirmation, never silently resolved.",
+   "checks": [
+    {
+     "kind": "qualified",
+     "term": "hydra|hydroxyzine|hydrazine",
+     "regex": true,
+     "cues": [
+      "unclear",
+      "confirm",
+      "uncertain",
+      "?",
+      "unknown",
+      "ambiguous"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "must_confirm_mentions",
+     "term": "hydrazine"
+    }
+   ]
+  },
+  {
+   "id": "T6",
+   "name": "Allergy captured",
+   "expected": "Penicillin allergy documented.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "penicillin",
+     "any": [
+      "allerg"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "assertion_field",
+     "entity": "penicillin",
+     "field": "type",
+     "equals": "allergy"
+    }
+   ]
+  },
+  {
+   "id": "T7",
+   "name": "Spoken exam finding kept; unspoken exam not invented",
+   "expected": "Crackles documented; cardiovascular/abdominal exam not invented and listed as not captured.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "crackle",
+     "any": [
+      "right"
+     ]
+    },
+    {
+     "kind": "forbid_pattern",
+     "pattern": "(heart sounds|s1\\s*s2|abdomen (is )?soft|cardiovascular (exam\\w* )?(is )?(normal|unremarkable)|no murmur)"
+    }
+   ],
+   "structural": [
+    {
+     "kind": "not_captured_contains",
+     "term": "Cardiovascular"
+    }
+   ]
+  },
+  {
+   "id": "T8",
+   "name": "Small talk excluded",
+   "expected": "Traffic / cricket chatter absent from the note.",
+   "checks": [
+    {
+     "kind": "absent",
+     "terms": [
+      "traffic",
+      "cricket",
+      "sector 22"
+     ]
+    }
+   ],
+   "structural": []
+  },
+  {
+   "id": "T9",
+   "name": "Dose and frequency exact",
+   "expected": "Azithromycin 500 mg once daily for 5 days.",
+   "checks": [
+    {
+     "kind": "all_in_one_sentence",
+     "term": "azithromycin",
+     "all": [
+      "500",
+      "mg",
+      "once daily|od\\b|once a day",
+      "5 days|five days"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "number_lock_sentence_ok",
+     "term": "azithromycin"
+    }
+   ]
+  },
+  {
+   "id": "T10",
+   "name": "Unanswered patient question surfaced",
+   "expected": "The question about the cough medicine and sugar is surfaced to the doctor.",
+   "checks": [
+    {
+     "kind": "mention_with_any",
+     "term": "sugar",
+     "any": [
+      "ask",
+      "question",
+      "concern",
+      "query",
+      "?"
+     ]
+    }
+   ],
+   "structural": [
+    {
+     "kind": "omission_question",
+     "term": "sugar"
+    }
+   ]
+  }
+ ]
+}

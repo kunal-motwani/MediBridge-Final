@@ -1,0 +1,76 @@
+{
+ "lang": "mr",
+ "generated_at": "2026-10-20T20:34:35+00:00",
+ "basis_version": 1,
+ "doctor": "Dr. Aarav Sharma",
+ "visit_date": "2026-10-20",
+ "patient": "Rahul Sharma",
+ "prose": {
+  "why_you_came": "तुम्ही तुमच्या लक्षणांच्या आणि आरोग्याच्या तपासणीसाठी डॉक्टरांकडे आला होता.",
+  "what_doctor_said": "डॉक्टरांनी तुमची तपासणी केली, आरोग्याची पाहणी केली आणि योग्य उपचार पद्धतीचा सल्ला दिला.",
+  "home_care": "तुमची औषधे वेळेवर न चुकता घ्या, भरपूर पाणी प्या आणि पुरेशी विश्रांती घ्या."
+ },
+ "back_translation": {
+  "why_you_came": "You attended consultation to discuss your current symptoms and health status.",
+  "what_doctor_said": "The doctor examined you, assessed your clinical condition, and recommended targeted medical management.",
+  "home_care": "Take your prescribed medications regularly with water, stay well hydrated, and follow lifestyle precautions."
+ },
+ "medicines": {
+  "current": [],
+  "only_if": [],
+  "stop": []
+ },
+ "tests": [],
+ "follow_up": [],
+ "warning_signs": [],
+ "questions": [],
+ "gates": [
+  {
+   "id": "number_lock",
+   "ok": true,
+   "detail": "every locked number and drug name re-inserted exactly once"
+  },
+  {
+   "id": "readability",
+   "ok": false,
+   "detail": "English source grade 15.4; readability formula not computed for Marathi"
+  },
+  {
+   "id": "back_translation",
+   "ok": true,
+   "detail": "back-translation equivalent"
+  },
+  {
+   "id": "must_confirm",
+   "ok": true,
+   "detail": "built from signed version v1 (all must-confirm items confirmed)"
+  }
+ ],
+ "approved": false,
+ "approved_by": null,
+ "approved_at": null,
+ "demo_fixture": false,
+ "provenance": [
+  {
+   "stage": "translate:mr",
+   "role": "GENERATOR",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "translate-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  },
+  {
+   "stage": "back_translate:mr",
+   "role": "VERIFIER",
+   "provider": "l4_engine",
+   "model": "l4-deterministic-engine",
+   "prompt_version": "backtrans-v2",
+   "cache": "heuristic",
+   "attempts": 0,
+   "latency_ms": 0
+  }
+ ],
+ "gates_ok": false
+}

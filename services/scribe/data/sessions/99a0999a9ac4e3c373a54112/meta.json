@@ -1,0 +1,49 @@
+{
+ "id": "99a0999a9ac4e3c373a54112",
+ "created": "2026-10-20T21:07:17+00:00",
+ "consult_id": "upload",
+ "consent": true,
+ "consent_at": "2026-10-20T21:07:26+00:00",
+ "audio_file": "original.webm",
+ "audio_placeholder": false,
+ "chart": {
+  "patient": {
+   "name": "Rahul Sharma",
+   "age": 54,
+   "sex": "male",
+   "mrn": "MB-2026-487139"
+  },
+  "active_medications": [
+   {
+    "name": "Metformin",
+    "dose": "500 mg",
+    "unit": "",
+    "frequency": "Twice daily after meals"
+   },
+   {
+    "name": "Amlodipine",
+    "dose": "5 mg",
+    "unit": "",
+    "frequency": "Once daily morning"
+   }
+  ],
+  "allergies": [
+   {
+    "substance": "Penicillin",
+    "reaction": "reported allergy"
+   },
+   {
+    "substance": "Sulfa drugs",
+    "reaction": "reported allergy"
+   }
+  ],
+  "problem_list": [
+   "Type 2 Diabetes Mellitus",
+   "Essential Hypertension"
+  ],
+  "prior_note_excerpt": "2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-10-20 (Clinical Consultation Note (AI Scribe - Signed v1)): ### Subjective\nPatient reports presenting with clinical consultation.\n\n### Objective\nPhysical examination completed during visit.\n\n### Assessment\nClinical assessment: Symptomatic evaluation for clinical consultation.\n\n### Plan\nPatient advised standard supportive care and follow-up as indicated.\n2026-09-15 (Comprehensive Metabolic Panel & Lipid Profile): HbA1c: 7.1% (improved from 8.2%). Total Cholesterol: 185 mg/dL, LDL: 110 mg/dL, Triglycerides: 155 mg/dL. Renal profile within normal limits.",
+  "recordsCount": 5
+ },
+ "audio_sha256": "ebb149809e2d041084d53e2336af04b62bcc70cfd235a4cf635b5cd9c4e7e65f",
+ "first_signed_at": "2026-10-20T21:08:00+00:00"
+}

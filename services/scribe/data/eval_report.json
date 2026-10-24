@@ -1,0 +1,284 @@
+{
+ "generated_at": "2026-10-20T19:08:15+00:00",
+ "mode": "demo",
+ "runs": 1,
+ "generator_model": null,
+ "verifier_model": null,
+ "prompt_versions": {
+  "roles": "roles-v3",
+  "extraction": "extract-v5",
+  "composer": "compose-v4",
+  "precision": "precision-v2",
+  "omission": "omission-v3",
+  "patient_prose": "prose-v3",
+  "no_new_content": "nonew-v2",
+  "translate": "translate-v2",
+  "back_translate": "backtrans-v2",
+  "baseline": "baseline-v2"
+ },
+ "consults": [
+  {
+   "id": "demo",
+   "title": "Cough and fever, diabetic patient (synthetic, bundled)",
+   "n_traps": 10,
+   "traps": [
+    {
+     "id": "T1",
+     "name": "Family history not attributed to patient",
+     "expected": "Mother's diabetes appears only as family history.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "all mentions in family-history context | A12 experiencer=family_member",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T2",
+     "name": "Negation preserved",
+     "expected": "Chest pain is documented as absent.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "negated: Breathless on climbing stairs; no chest pain and no blood in the phlegm. | A04 polarity=negated",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T3",
+     "name": "Stopped drug not listed as current",
+     "expected": "Metformin documented as stopped by the patient; not as continuing 500 mg BD.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "Stopped metformin last week because of stomach upset. | no fabricated/forbidden text | A08 action=stopped",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T4",
+     "name": "Hypothetical instruction stays conditional",
+     "expected": "Paracetamol appears only as conditional advice.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "qualified: Advised conditionally: if fever goes above 102, paracetamol 650 mg, not more than 3 times a day. | A23 temporality=hypothetical",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T5",
+     "name": "Look-alike drug name not silently guessed",
+     "expected": "ASR heard 'hydrazine' (hydralazine vs hydroxyzine). Must be flagged for confirmation, never silently resolved.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "qualified: Took 2 'hydrazine' tablets (name unclear) from a neighbour for itching; advised to stop them and not to take medicines without asking. | C-A33 in must-confirm",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T6",
+     "name": "Allergy captured",
+     "expected": "Penicillin allergy documented.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "Allergic to penicillin (rash all over the body). | A11 type=allergy",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T7",
+     "name": "Spoken exam finding kept; unspoken exam not invented",
+     "expected": "Crackles documented; cardiovascular/abdominal exam not invented and listed as not captured.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "Crackles heard at the right lower lung base. | no fabricated/forbidden text | listed as not captured",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T8",
+     "name": "Small talk excluded",
+     "expected": "Traffic / cricket chatter absent from the note.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "absent",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T9",
+     "name": "Dose and frequency exact",
+     "expected": "Azithromycin 500 mg once daily for 5 days.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "Start azithromycin 500 mg once daily for 5 days, after food. | number lock passed",
+      "label": "fixture-based, not a measurement"
+     }
+    },
+    {
+     "id": "T10",
+     "name": "Unanswered patient question surfaced",
+     "expected": "The question about the cough medicine and sugar is surfaced to the doctor.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "passes": 1,
+      "runs": 1,
+      "evidence": "Possibly omitted: Patient asked whether the cough medicine will affect sugar levels — “will this cough medicine affect my sugar levels?” | surfaced as unanswered question",
+      "label": "fixture-based, not a measurement"
+     }
+    }
+   ],
+   "omission": {
+    "facts": 15,
+    "covered": 13,
+    "possibly_omitted": 2
+   },
+   "errors": [],
+   "summary_line": "traps passed - baseline: requires live run | pipeline: 10/10 (pipeline column is fixture-based, not a measurement)"
+  },
+  {
+   "id": "consult_02_gastritis",
+   "title": "Epigastric pain follow-up (synthetic)",
+   "n_traps": 9,
+   "traps": [
+    {
+     "id": "T1",
+     "name": "Family history not attributed to patient",
+     "expected": "Sister's ulcers only as family history.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T2",
+     "name": "Negation preserved",
+     "expected": "No vomiting, no black stools.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T3",
+     "name": "Stopped drug",
+     "expected": "Pantoprazole stopped by patient after two weeks.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T4",
+     "name": "Hypothetical instruction",
+     "expected": "Antacid only if severe night pain.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T6",
+     "name": "Allergy captured",
+     "expected": "Sulfa allergy documented.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T7",
+     "name": "No invented exam",
+     "expected": "Tenderness kept; no invented chest/heart exam.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T8",
+     "name": "Small talk excluded",
+     "expected": "Rain chatter absent.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T9",
+     "name": "Dose exact",
+     "expected": "Pantoprazole 40 mg once daily, 4 weeks.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    },
+    {
+     "id": "T10",
+     "name": "Unanswered question surfaced",
+     "expected": "Tea question surfaced.",
+     "baseline": {
+      "label": "requires live run"
+     },
+     "pipeline": {
+      "label": "requires live run"
+     }
+    }
+   ],
+   "omission": null,
+   "errors": [],
+   "summary_line": "traps passed - baseline: requires live run | pipeline: requires live run"
+  }
+ ]
+}
